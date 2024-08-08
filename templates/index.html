@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Page Title -->
+  <title>Kopsaqtau</title>
+
+  <!-- Meta Data -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}" />
+
+  <!-- ======= Icons ======= -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='dependencies/flaticon/flaticon.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/all.min.css') }}" />
+
+  <!-- ======= Carousel  ======= -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='dependencies/slick/slick.min.css') }}" />
+
+  <!-- ======= Animation  ======= -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='dependencies/animation/animate.min.css') }}" />
+  <!-- ======= Others  ======= -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='dependencies/niceselect/nice-select.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='dependencies/animation/custom-animation.css') }}" />
+
+  <!-- ======= Main Stylesheet ======= -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+
+  <!-- ======= Custom Stylesheet ======= -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}" />
+</head>
+<body>
+  <!--start loader-->
+  <div class="loader">
+    <div class="cssload-loader">
+      <div class="cssload-inner cssload-one"></div>
+      <div class="cssload-inner cssload-two"></div>
+      <div class="cssload-inner cssload-three"></div>
+    </div>
+  </div>
+  <!--loader end-->
+    <!-- PC Menu Start -->
+  <header id="top" class="header d-none d-lg-block sticky-on">
+    <div id="navbar-wrap" class="header-bottom container-custom navbar-wrap white-bg">
+      <div class="container-fluid">
+        <div class="header-bottom__row">
+          <div class="header-bottom__col">
+            <div class="logo">
+              <a href="index.html" class="logo__link">
+                <img src="assets/images/horizontal-logo.png" alt="kopsaqtau" width="150" height="50" />
+              </a>
+            </div>
+          </div>
+          <div class="header-bottom__col">
+            <div class="main-menu">
+              <nav class="main-menu__nav">
+                <ul>
+                  <li class="main-menu__nav_sub list">
+                    <a class="animation" href="#">Company</a>
+                    <ul class="main-menu__dropdown">
+                      <li>
+                      <a href="#solution" class="scroll-to-section">Solution</a>
+                      </li>
+                      <li>
+                        <a href="#service" class="scroll-to-section">Services</a>
+                      </li>
+                      <li>
+                        <a href="#meet-our-team" class="scroll-to-section">Meet our team</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="list">
+                    <a href="#contact" class="scroll-to-section">Contact</a>
+                  </li>
+                  <li class="list">
+                    <a href="#about-us-section" class="scroll-to-section">About Us</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Mobile Menu Start -->
+  <div class="rt-header-menu mean-container position-relative" id="meanmenu">
+    <div class="mean-bar">
+      <a href="index.html">
+        <img class="logo-small" height="175" width="125" alt="Techkit" src="assets/images/horizontal-logo.png" />
+      </a>
+      <form class="header-bottom__col">
+        <div class="header-search">
+          <input placeholder="Search" type="text" class="header-search__input" />
+          <button class="header-search__button">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </form>
+      <span class="sidebarBtn">
+        <span class="fa fa-bars"></span>
+      </span>
+    </div>
+    <div class="rt-slide-nav">
+      <div class="offscreen-navigation">
+        <nav class="menu-main-primary-container">
+          <ul class="menu">
+            <li class="list menu-item-parent menu-item-has-children">
+              <a class="animation" href="about-us.html">Company</a>
+              <ul class="main-menu__dropdown sub-menu">
+                <li><a href="#about-us-section">About Us</a></li>
+                <li>
+                  <a href="#why-kopsaqtau" class="scroll-to-section">Why Kopsaqtau?</a>
+                </li>
+              </ul>
+            </li>
+            <li class="list menu-item-parent menu-item-has-children">
+              <a class="animation" href="it-solution.html">Solutions</a>
+              <ul class="main-menu__dropdown sub-menu">
+                <li><a href="#solution">Solutions</a></li>
+                <li>
+                  <a href="#service" class="scroll-to-section">Services</a>
+                </li>
+                <li class="list menu-item-parent">
+                  <a href="#contact" class="scroll-to-section">Contact</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- Mobile Menu Start End -->
+
+  <!-- ======= Header End ======= -->
+
+  <!-- ======= Main Wrapper Start ======= -->
+  <main class="main-wrapper overflow-hidden">
+    <!-- ======= Hero Start ======= -->
+    <section class="hero overflow-hidden">
+      <div class="slider slider--active">
+        <div class="slider__single slider__bg container-custom">
+          <img src="assets/images/wordmark-logo.png" alt="" class="slider__shape slider__shape--one"
+            data-animation="slideInDown" data-delay=".4s" data-duration="2s" />
+          <img src="assets/images/shape/slider-shape-2.png" alt="" class="slider__shape slider__shape--two"
+            data-animation="slideInRight" data-delay=".5s" data-duration="2.5s" />
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xl-6 col-lg-7 col-md-8">
+                <div class="slider-content">
+                  <span class="slider-content__title_small ml13" data-animation="fadeInUp" data-delay=".4s">
+                    Kopsaqtau</span>
+                  <h2 id="ml12" class="slider-content__title_big" data-animation="fadeInUp" data-delay=".6s">
+                    Where Innovation Meets Efficiency
+                  </h2>
+                  <p class="slider-content__text" data-animation="fadeInUp" data-delay=".8s">
+                    Join the future of insurance with Kopsaqtau. Contact us today to schedule a demo and see how our AI tool can transform your business operations.
+                  </p>
+
+                  <a href="#contact" id="scroll-to-contact" class="btn btn--common btn--primary rt-button-animation-out"
+                    data-animation="fadeInUp" data-delay="1s">
+                    Get Demo
+                    <svg width="34px" height="16px" viewBox="0 0 34.53 16" xml:space="preserve">
+                      <rect class="rt-button-line" y="7.6" width="34" height=".4"></rect>
+                      <g class="rt-button-cap-fake">
+                        <path class="rt-button-cap" d="M25.83.7l.7-.7,8,8-.7.71Zm0,14.6,8-8,.71.71-8,8Z"></path>
+                      </g>
+                    </svg>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider__single slider__bg container-custom">
+          <img src="assets/images/shape/slider-shape-1.png" alt="" class="slider__shape slider__shape--three"
+            data-animation="zoomIn" data-delay=".4s" data-duration="2.5s" />
+          <img src="assets/images/shape/slider-shape-4.png" alt="" class="slider__shape slider__shape--four"
+            data-animation="slideInUp" data-delay=".3s" data-duration="2s" />
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xl-6 col-lg-7">
+                <div class="slider-content slider-content--two">
+                  <span class="slider-content__title_small title title--small ml13" data-animation="fadeInUp"
+                    data-delay=".2s">
+                    Our Solution</span>
+                  <h2 class="slider-content__title_big title title--big" data-animation="fadeInUp" data-delay=".4s">
+                    Cutting-Edge Technology Behind Kopsaqtau
+                  </h2>
+                  <p class="slider-content__text paragraph" data-animation="fadeInUp" data-delay=".6s">
+                    Our advanced technology ensures faster, more accurate calculations, making your operations more efficient.
+                  </p>
+                  <a href="#solution" class="btn btn--common btn--primary rt-button-animation-out"
+                    data-animation="fadeInUp" data-delay=".8s">
+                    Get Details
+                    <svg width="34px" height="16px" viewBox="0 0 34.53 16" xml:space="preserve">
+                      <rect class="rt-button-line" y="7.6" width="34" height=".4"></rect>
+                      <g class="rt-button-cap-fake">
+                        <path class="rt-button-cap" d="M25.83.7l.7-.7,8,8-.7.71Zm0,14.6,8-8,.71.71-8,8Z"></path>
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider__single slider__bg container-custom">
+          <img src="assets/images/shape/slider-shape-5.png" alt="Slide" class="slider__shape slider__shape--five"
+            data-animation="zoomIn" data-delay=".3s" data-duration="2s" />
+          <img src="assets/images/shape/slider-shape-6.png" alt="" class="slider__shape slider__shape--six"
+            data-animation="slideInLeft" data-delay=".3s" data-duration="2.2s" />
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xl-6 col-lg-7">
+                <div class="slider-content slider-content--two">
+                  <span class="slider-content__title_small title title--small" data-animation="fadeInUp"
+                    data-delay=".2s">
+                    Our Services</span>
+                  <h2 class="slider-content__title_big title title--big" data-animation="fadeInUp" data-delay=".4s">
+                    Streamlining Your Insurance Operations
+                  </h2>
+                  <p class="slider-content__text paragraph" data-animation="fadeInUp" data-delay=".6s">
+                    Whether you're a small insurance firm or a large corporation, Kopsaqtau's services are designed to scale with your business and provide the tools you need to succeed. Experience the power of AI and transform your operations with Kopsaqtau.
+                  </p>
+                  <a href="#service" class="btn btn--common btn--primary rt-button-animation-out"
+                    data-animation="fadeInUp" data-delay=".8s">
+                    Get Details
+                    <svg width="34px" height="16px" viewBox="0 0 34.53 16" xml:space="preserve">
+                      <rect class="rt-button-line" y="7.6" width="34" height=".4"></rect>
+                      <g class="rt-button-cap-fake">
+                        <path class="rt-button-cap" d="M25.83.7l.7-.7,8,8-.7.71Zm0,14.6,8-8,.71.71-8,8Z"></path>
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======= Hero End ======= -->
+
+    <!-- ======= About Start ======= -->
+    <section id="about-us-section" class="about about--area about--padding">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5 mb-30">
+            <div class="section-heading mb-40">
+              <span class="section-heading__title_small wow fadeInUp" data-wow-delay=".2s" data-wow-duration=".4s">About
+                Company</span>
+              <h2 class="section-heading__title_big wow fadeInUp" data-wow-delay=".3s" data-wow-duration=".5s">
+                Best Solution To Run Your Calculations Faster
+              </h2>
+            </div>
+            <div class="about-content">
+              <p class="about-content__text wow fadeInUp" data-wow-delay=".5s" data-wow-duration=".9s">
+                
+                At Kopsaqtau, we utilize the latest advancements in artificial intelligence and machine learning to deliver a robust and efficient solution tailored for the insurance industry. Our cutting-edge AI tool is designed to streamline calculations and make complex processes effortless, allowing you to focus on what truly matters—providing exceptional service to your clients.
+                
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 offset-lg-1 mb-30 text-md-center">
+            <div class="about-content__image about-content__image_right position-relative">
+              <img width="300" height="250" src="assets/images/vertical-logo.png"
+                alt="About Our RadiusTheme Company" class="about-img wow fadeInRight" data-wow-delay="1s"
+                data-wow-duration="1.2s" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======= About End ======= -->
+
+    <!-- ======= Service Area Start ======= -->
+    <section id="solution" class="services services--padding section-bg-common">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5">
+            <div id="why-kopsaqtau" class="section-heading mb-45">
+              <span class="section-heading__title_small wow fadeInUp" data-wow-delay=".2s" data-wow-duration=".4s">
+                our solution
+              </span>
+              <h2 class="section-heading__title_big wow fadeInUp" data-wow-delay=".4s" data-wow-duration=".6s">
+                Why Kopsaqtau?
+              </h2>
+            </div>
+            
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 wow fadeInLeft" data-wow-delay=".2s" data-wow-duration=".4s">
+            <div class="services__item mb-50">
+              <div class="services__item_overlay"></div>
+              <header class="services__item_header d-flex align-items-center">
+                <i class="flaticon flaticon-create services__item_icon"></i>
+                <h3 class="services__item_title">
+                  <a href="#">Real-Time Calculations</a>
+                </h3>
+              </header>
+              <div class="services__item_content">
+                <p class="services__item_paragraph">
+                  Perform complex calculations in real-time, allowing for faster decision-making and improved client satisfaction.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInLeft" data-wow-delay=".4s" data-wow-duration=".6s">
+            <div class="services__item mb-50">
+              <div class="services__item_overlay"></div>
+              <header class="services__item_header d-flex align-items-center">
+                <i class="flaticon flaticon-management services__item_icon">
+                </i>
+                <h3 class="services__item_title">
+                  <a href="#">Data Integration</a>
+                </h3>
+              </header>
+              <div class="services__item_content">
+                <p class="services__item_paragraph">
+                  Seamlessly integrate with your existing systems and databases, ensuring a smooth transition and continuous operation.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInLeft" data-wow-delay=".6s" data-wow-duration=".8s">
+            <div class="services__item mb-50">
+              <div class="services__item_overlay"></div>
+              <header class="services__item_header d-flex align-items-center">
+                <i class="flaticon flaticon-secure-shield services__item_icon">
+                </i>
+                <h3 class="services__item_title">
+                  <a href="#">Data Security</a>
+                </h3>
+              </header>
+              <div class="services__item_content">
+                <p class="services__item_paragraph">
+                  Protect your sensitive data with our robust security measures, ensuring compliance with industry standards and regulations.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInLeft" data-wow-delay=".8s" data-wow-duration="1s">
+            <div class="services__item mb-50">
+              <div class="services__item_overlay"></div>
+              <header class="services__item_header d-flex align-items-center">
+                <i class="flaticon flaticon-analytics services__item_icon"></i>
+                <h3 class="services__item_title">
+                  <a href="#">Data Integration</a>
+                </h3>
+              </header>
+              <div class="services__item_content">
+                <p class="services__item_paragraph">
+                  Seamlessly integrate with your existing systems and databases, ensuring a smooth transition and continuous operation.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInLeft" data-wow-delay="1s" data-wow-duration="1.2s">
+            <div class="services__item mb-50">
+              <div class="services__item_overlay"></div>
+              <header class="services__item_header d-flex align-items-center">
+                <i class="flaticon flaticon-client services__item_icon"></i>
+                <h3 class="services__item_title">
+                  <a href="#">Effortless Operations</a>
+                </h3>
+              </header>
+              <div class="services__item_content">
+                <p class="services__item_paragraph">
+                  Our intuitive interface and user-friendly design make it easy for your team to integrate Kopsaqtau into their workflow.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInLeft" data-wow-delay="1.2s" data-wow-duration="1.5s">
+            <div class="services__item mb-50">
+              <div class="services__item_overlay"></div>
+              <header class="services__item_header d-flex align-items-center">
+                <i class="flaticon flaticon-deadline services__item_icon"></i>
+                <h3 class="services__item_title">
+                  <a href="#">Speed and Efficiency</a>
+                </h3>
+              </header>
+              <div class="services__item_content">
+                <p class="services__item_paragraph">
+                  Kopsaqtau leverages advanced AI algorithms to perform calculations at unprecedented speeds, reducing the time spent on routine tasks and enhancing overall efficiency.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======= Service Area End ======= -->
+
+    <!-- ======= Service Key Area Start ======= -->
+    <section id="service" class="services-key services-key--padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 offset-lg-1">
+            <div class="section-heading text-center mb-30">
+              <span class="section-heading__title_small">
+                Our Service
+              </span>
+              <h2 class="section-heading__title_big">
+                Easy Solutions for all Difficult Problems
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="services-key__navbar">
+          <div class="row">
+            <div class="col-sm-12">
+              <ul class="services-key__navbar_nav nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item services-key__navbar_item" role="presentation">
+                  <button class="services-key__navbar_link nav-link active" id="home-tab" data-bs-toggle="tab"
+                    data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+                    <i class="flaticon flaticon-settings"></i> Why Choose us
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="services-key__tabbar pt-50">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                  <div class="row">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                      <div class="services__item services-key__content mb-30">
+                        <div class="services__item_overlay services-key__content_overlay"></div>
+                        <header class="services__item_header services-key__content_header">
+                          <i
+                            class="flaticon flaticon-graphic-design services__item_icon services-key__content_icon"></i>
+                          <h3 class="services__item_title services-key__content_title">
+                            <a href="#">Integration</a>
+                          </h3>
+                        </header>
+                        <div class="services__item_content services-key__content_text">
+                          <p class="services__item_paragraph services-key__content_paragraph">
+                            Connect Kopsaqtau to your existing systems effortlessly.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                      <div class="services__item services-key__content mb-30">
+                        <div class="services__item_overlay services-key__content_overlay"></div>
+                        <header class="services__item_header services-key__content_header">
+                          <i
+                            class="flaticon flaticon-web-development services__item_icon services-key__content_icon"></i>
+                          <h2 class="services__item_title services-key__content_title">
+                            <a href="#">Configuration</a>
+                          </h2>
+                        </header>
+                        <div class="services__item_content services-key__content_text">
+                          <p class="services__item_paragraph services-key__content_paragraph">
+                            Customize settings to match your specific requirements.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                      <div class="services__item services-key__content mb-30">
+                        <div class="services__item_overlay services-key__content_overlay"></div>
+                        <header class="services__item_header services-key__content_header">
+                          <i class="flaticon flaticon-analysis services__item_icon services-key__content_icon"></i>
+                          <h2 class="services__item_title services-key__content_title">
+                            <a href="#">Operation</a>
+                          </h2>
+                        </header>
+                        <div class="services__item_content services-key__content_text">
+                          <p class="services__item_paragraph services-key__content_paragraph">
+                            Start using Kopsaqtau to perform calculations, generate reports, and manage data.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                      <div class="services__item services-key__content mb-30">
+                        <div class="services__item_overlay services-key__content_overlay"></div>
+                        <header class="services__item_header services-key__content_header">
+                          <i
+                            class="flaticon flaticon-cyber-security services__item_icon services-key__content_icon"></i>
+                          <h2 class="services__item_title services-key__content_title">
+                            <a href="#">Support</a>
+                          </h2>
+                        </header>
+                        <div class="services__item_content services-key__content_text">
+                          <p class="services__item_paragraph services-key__content_paragraph">
+                            Access our dedicated support team for any questions or assistance you need.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+
+    <!-- ======= Team Area Start ======= -->
+    <section id="meet-our-team" class="team pb-85">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2">
+            <div class="section-heading mb-55 text-center wow fadeInUp" data-wow-delay=".3s" data-wow-duration=".5s">
+              <span class="section-heading__title_small"> OUR TEAM </span>
+              <h2 class="section-heading__title_big">
+                Experiences IT Solutions.
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-30">
+            <div class="team-block team-block--two wow fadeInUp" data-wow-delay=".5s"
+              data-wow-duration=".7s">
+              <div class="image">
+                <img class="image__member" src="assets/images/team/team_member_nyaz_2.jpg" alt="Team Member" width="545"
+                  height="663" />
+                <div class="social">
+                  <ul>
+                    <li>
+                      <a class="facebook" href="javascript:void(0);">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="twitter" href="javascript:void(0);">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="instagram" href="javascript:void(0);">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="linkedin" href="javascript:void(0);">
+                        <i class="fab fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="content">
+                <h3 class="name">
+                  Nyaz Muslim
+                  <span class="designation">- CEO</span>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-30">
+            <div class="team-block team-block--two wow fadeInUp" data-wow-delay=".9s" data-wow-duration="1s">
+              <div class="image">
+                <img class="image__member" src="assets/images/team/team-member-abylay_1.jpg" alt="Team Member" width="545"
+                  height="663" />
+                <div class="social">
+                  <ul>
+                    <li>
+                      <a class="facebook" href="javascript:void(0);">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="twitter" href="javascript:void(0);">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="instagram" href="javascript:void(0);">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="linkedin" href="javascript:void(0);">
+                        <i class="fab fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="content">
+                <h3 class="name">
+                  Abylay Dospayev
+                  <span class="designation">- CEO</span>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-30">
+            <div class="team-block team-block--two wow fadeInUp" data-wow-delay="1s" data-wow-duration="1.3s">
+              <div class="image">
+                <img class="image__member" src="assets/images/team/team_member_joe.jpg" alt="Team Member" width="545"
+                  height="663" />
+                <div class="social">
+                  <ul>
+                    <li>
+                      <a class="facebook" href="javascript:void(0);">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="twitter" href="javascript:void(0);">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="instagram" href="javascript:void(0);">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="linkedin" href="javascript:void(0);">
+                        <i class="fab fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="content">
+                <h3 class="name">
+                  Georgy Siburov
+                  <span class="designation">- CTO </span>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======= Team Area End ======= -->
+
+  
+
+    <!-- ======= Contact Area Start ======= -->
+    <section id="contact" class="contact contact--bg contact--padding" data-bg-image="assets/images/shape/contact-bg-shape.png">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5 mb-30">
+            <div class="contact-address contact-address--bg">
+              <ul>
+                <li class="contact-address__item mb-20">
+                  <div class="contact-address__item_icon">
+                    <i class="fas fa-envelope-open-text"></i>
+                  </div>
+                  <div class="contact-address__item_text">
+                    <h3 class="text-white">Email Address</h3>
+                    <p class="text-white">kopsaqtau@gmail.com</p>
+                  </div>
+                </li>
+                <li class="contact-address__item mb-40">
+                  <div class="contact-address__item_icon">
+                    <i class="fas fa-phone-alt"></i>
+                  </div>
+                  <div class="contact-address__item_text">
+                    <h3 class="text-white">Call Us</h3>
+                    <p class="text-white">
+                      <i>+12068593360</i>
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-7 mb-30">
+            <form action="{{ url_for('send_email') }}" method="POST" class="contact-form" id="contact-form">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="section-heading mb-45">
+                    <span class="section-heading__title_small">
+                      Get In Touch
+                    </span>
+                    <h2 class="section-heading__title_big">
+                      We're excited to connect with you and explore how Kopsaqtau can transform your insurance business.
+                    </h2>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <input name="name" type="text" class="contact-form__input" placeholder="Name *" />
+                </div>
+                <div class="col-md-6">
+                  <input name="email" type="text" class="contact-form__input" placeholder="Email *" />
+                </div>
+                <div class="col-md-6">
+                  <input name="phone" type="text" class="contact-form__input" placeholder="Phone" />
+                </div>
+                <div class="col-md-6">
+                  <input name="subject" type="text" class="contact-form__input" placeholder="Subject" />
+                </div>
+                <div class="col-md-12">
+                  <textarea class="contact-form__input contact-form__input_textarea" name="message"
+                    placeholder="Message"></textarea>
+                </div>
+                <div class="col-md-12">
+                  <button type="submit" class="contact-form__button">
+                    Send Message
+                  </button>
+                </div>
+              </div>
+              <div class="form-response"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======= Contact Area End ======= -->
+  </main>
+  <!-- ======= Main Wrapper End ======= -->
+
+  <!-- Footer -->
+  <footer class="footer footer--bg position-relative overflow-hidden">
+    <img class="footer-shape footer-shape--left wow fadeInLeft" data-wow-delay="1.5s"
+      src="assets/images/shape/footer-shape-1.png" alt="Shape" />
+    <img class="footer-shape footer-shape--right wow fadeInRight" data-wow-delay="1.5s"
+      src="assets/images/shape/footer-shape-2.png" alt="Shape" />
+    <div class="footer--top footer--padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-30">
+            <div class="footer-widget">
+              <div class="footer-widget__log mb-30">
+                <a href="index.html">
+                  <img src="assets/images/horizontal-logo-light.png" alt="" width="150" height="100" />
+              </a>
+              </div>
+              <div class="footer-widget__text">
+                <p class="footer-widget__text_paragraph">
+                  Our solution is designed to grow with your business, providing continuous support and enhancements.
+                </p>
+              </div>
+              <div class="footer-widget__social">
+                <ul>
+                  <li class="footer-widget__social_list">
+                    <a class="footer-widget__social_list--link facebook" href="javascript:void(0);">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li class="footer-widget__social_list">
+                    <a class="footer-widget__social_list--link twitter" href="javascript:void(0);">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li class="footer-widget__social_list">
+                    <a class="footer-widget__social_list--link instagram" href="javascript:void(0);">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li class="footer-widget__social_list">
+                    <a class="footer-widget__social_list--link linkedin" href="javascript:void(0);">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                  <li class="footer-widget__social_list">
+                    <a class="footer-widget__social_list--link pinterest" href="javascript:void(0);">
+                      <i class="fab fa-pinterest-p"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 offset-lg-1 mb-25">
+            <div class="footer-widget">
+              <div class="footer-widget__title">
+                <h3 class="footer-widget__title_heading">Important Links</h3>
+              </div>
+              <div class="footer-widget__menu">
+                <li  class="footer-widget__menu_list">
+                  <a href="#top" class="scroll-to-section">Scroll To The Top</a>
+                </li>
+                <li  class="footer-widget__menu_list">
+                  <a href="#about-us-section" class="scroll-to-section">About Us</a>
+                </li>
+                <li class="footer-widget__menu_list">
+                  <a href="#meet-our-team" class="scroll-to-section">Meet our team</a>
+                </li>
+                <li class="footer-widget__menu_list">
+                  <a href="#solution" class="scroll-to-section">Solution</a>
+                </li>     
+                <li class="footer-widget__menu_list">
+                  <a href="#service" class="scroll-to-section">Service</a>
+                </li>             
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="footer--bottom footer--bottom-padding footer--bottom-border">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="footer__copyright">
+              <p class="footer__copyright_text">
+                © 2024 <a href="index.html">Kopsaqtau</a>. All Rights Reserved
+                by
+                <a href="https://www.radiustheme.com" rel="nofollow">Kopsaqtau</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+  <!-- /.content-wrapper -->
+  <div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+  </div>
+
+<!-- ======= jQuery Library ======= -->
+<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='dependencies/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
+<script src="{{ url_for('static', filename='dependencies/slick/slick.min.js') }}"></script>
+<script src="{{ url_for('static', filename='dependencies/animation/wow.min.js') }}"></script>
+<script src="{{ url_for('static', filename='dependencies/parallax/parallaxie.js') }}"></script>
+<script src="{{ url_for('static', filename='dependencies/greensock/TweenMax.min.js') }}"></script>
+<script src="{{ url_for('static', filename='dependencies/counter-up/jquery.counterup.min.js') }}"></script>
+<script src="{{ url_for('static', filename='dependencies/waypoints/jquery.waypoints.min.js') }}"></script>
+<script src="{{ url_for('static', filename='dependencies/niceselect/jquery.nice-select.min.js') }}"></script>
+<script src="{{ url_for('static', filename='dependencies/anime/anime.min.js') }}"></script>
+<script src="{{ url_for('static', filename='dependencies/imagesloaded/imagesloaded.pkgd.min.js') }}"></script>
+<script src="{{ url_for('static', filename='dependencies/tilt/vanilla-tilt.min.js') }}"></script>
+<script src="{{ url_for('static', filename='dependencies/fancybox/jquery.fancybox.min.js') }}"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="{{ url_for('static', filename='dependencies/isotope/isotope.pkgd.min.js') }}"></script>
+<script src="{{ url_for('static', filename='dependencies/isotope/imagesloaded.pkgd.min.js') }}"></script>
+
+<!-- ======= Main JS ======= -->
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+<!-- ======= Custom JS ======= -->
+<script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+
+
+</body>
+
+</html>

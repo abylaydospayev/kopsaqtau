@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "80:80"  # Map to port 80 on the host
+    environment:
+      - SECRET_KEY=${SECRET_KEY}
+      - EMAIL_USER=${EMAIL_USER}
+      - EMAIL_PASS=${EMAIL_PASS}
+    volumes:
+      - ./app:/app  # Only mount the app directory, not the entire current directory
+    depends_on:
+      - redis
+    restart: always  # Ensure the container restarts if it crashes
+
+  redis:
+    image: "redis:alpine"
+    volumes:
+      - redis_data:/data  # Persist Redis data
+    restart: always  # Ensure the container restarts if it crashes
+
+volumes:
+  redis_data:  # Define a named volume for Redis data persistence
